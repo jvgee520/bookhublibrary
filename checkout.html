@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHub Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/06b257c653.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+        <div class="navbar1">
+            <div class="navmenu1">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">FAQ</a>
+                <a href="#">CONTACT US</a>
+            </div>
+        </div>
+
+        <div class="navbar2">
+
+            <div class="col-6 logo">
+                <div class="hub">
+                <span contenteditable="false">Book</span>
+                <span contenteditable="false">Hub</span>
+                </div>
+            </div>
+
+            <div class="col-6 searchbar">
+            <div>
+                <input type="text" placeholder="Search books by keyword / title / author" id="search" class="search-input">
+                <a><button type="button" class="btn-search">Search</button></a>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="back">
+
+            <div class="back-button">
+                    <a href="index.html">GO BACK TO HOME PAGE</a>
+            </div>
+
+        </div>
+
+    <!-- -------------- Checkout page -------------- -->
+
+        <div class="container">
+
+            <form action="">
+        
+                <div class="row">
+        
+                    <div class="col">
+        
+                        <h4 class="title">Enter Your Information</h4>
+        
+                        <div class="inputBox">
+                            <span>Full Name :</span>
+                            <input type="text" placeholder="Juan Dela Cruz">
+                        </div>
+                        <div class="inputBox">
+                            <span>Email :</span>
+                            <input type="email" placeholder="example@example.com">
+                        </div>
+                        <div class="inputBox">
+                            <span>Address :</span>
+                            <input type="text" placeholder="Blk / Lot / Street / Apt# / Brgy / Subdv.">
+                        </div>
+                        <div class="inputBox">
+                            <span>State/Province :</span>
+                            <Select class="city" name="province">
+                                    <option value="0">- Select -</option>
+                                    <option value="1">Abra</option>
+                                    <option value="2">Apayao</option>
+                                    <option value="3">Benguet</option>
+                                    <option value="4">Ifugao</option>
+                                    <option value="5">Kalinga</option>
+                                    <option value="6">Mountain Province</option>
+                                    <option value="7">Ilocos Norte</option>
+                                    <option value="8">Ilocos Sur</option>
+                                    <option value="9">La Union</option>
+                                    <option value="10">Pangasinan</option>
+                                    <option value="11">Batanes</option>
+                                    <option value="12">Cagayan</option>
+                                    <option value="13">Isabela</option>
+                                    <option value="14">Nueva Vizcaya</option>
+                                    <option value="15">Quirino</option>
+                                    <option value="16">Aurora</option>
+                                    <option value="17">Bataan</option>
+                                    <option value="18">Bulacan</option>
+                                    <option value="19">National Capital Region</option>
+                                    <option value="20">Nueva Ecija</option>
+                                    <option value="21">Pampanga</option>
+                                    <option value="22">Tarlac</option>
+                                    <option value="23">Zambales</option>
+                                    <option value="24">Batangas</option>
+                                    <option value="25">Cavite</option>
+                                    <option value="26">Laguna</option>
+                                    <option value="27">Quezon</option>
+                                    <option value="28">Rizal</option>
+                                    <option value="29">Marinduque</option>
+                                    <option value="30">Occidental Mindoro</option>
+                                    <option value="31">Oriental Mindoro</option>
+                                    <option value="32">Palawan</option>
+                                    <option value="33">Romblon</option>
+                                    <option value="34">Albay</option>
+                                    <option value="35">Camarines Norte</option>
+                                    <option value="36">Camarines Sur</option>
+                                    <option value="37">Catanduanes</option>
+                                    <option value="38">Masbate</option>
+                                    <option value="39">Sorsogon</option>  
+                                </select>
+                            </div>
+        
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>City/Municipality :</span>
+                                <input type="text" placeholder="Metro Manila">
+                            </div>
+                            <div class="inputBox">
+                                <span>Zip/postal Code :</span>
+                                <input type="text" placeholder="1004">
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="col">
+        
+                        <h3 class="title">Payment</h3>
+        
+                        <div class="inputBox">
+                            <span>Select Payment Method :</span>  
+                            <div class="inputBox">
+                    
+                                <input type="radio" id="Gcash" name="paymethod" value="Gcash" style="height:20px; width:20px">
+                                <span>Mobile Wallet</span>
+                    
+                                <input type="radio" id="credit" name="paymethod" value="credit" style="height:20px; width:20px">
+                                <span>Debit/Credit Card</span>
+                    
+                                <input type="radio" id="Cod" name="paymethod" value="Cod" style="height:20px; width:20px">
+                                <span>Cash On Delivery</span>
+
+                                <img src="images/card_img.png" alt=""><br>
+                                <img src="images/gcash.png" alt="">
+                                <img src="images/maya.jpg" alt="">
+                                <img src="images/lbc.jpg" alt="">
+                                <img src="images/jnt.jpg" alt=""> 
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+            
+                </div>
+        
+                <input type="submit" value="proceed to checkout" class="submit-btn">
+        
+            </form>
+        
+        </div>    
+
+
+
+
+</body>
+
+        <footer>
+
+                <div class="navbar2">
+
+                    <div class="col-6 logo">
+                        <div class="hub">
+                        <span contenteditable="false">Book</span>
+                        <span contenteditable="false">Hub</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6 searchbar">
+                    <div>
+                        <input type="text" placeholder="Search books by keyword / title / author" id="search" class="search-input">
+                        <a><button type="button" class="btn-search">Search</button></a>
+                    </div>
+                    </div>
+
+                </div>
+
+        </footer>
+
+</html>

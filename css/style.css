@@ -1,0 +1,595 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: beige;
+}
+
+/* - Navigation 1stbar - */
+
+.navbar1 {
+    background-color: rgb(0, 0, 0);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar1 a {
+    width: 100%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+/* - Navigation 2ndbar - */
+.navbar2 {
+    width: 100%;
+    background-color: #37475a;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* - logo start- */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.hub {
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 5
+    px;
+  }
+  
+.hub span:nth-child(2) {
+    background: #FF9900;
+    color: #37475a;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+/* - logo end - */
+/* - Search bar/button - */
+.searchbar {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    height: 30px;
+}
+
+.search-input {
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-search {
+    height: 35px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #FF9900;
+}
+
+/* - Navigation 3rd bar - */
+
+.navbar3 {
+    background-color: #FF9900;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.navmenu2 {
+    display: flex;
+    align-items: center;
+}
+
+.navmenu2 a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-weight: 550;
+    margin-left: 40px;
+}
+
+select {
+    height: 25px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 10px;
+}
+
+ a:hover {
+    background: red;
+    transition: .5s;
+ }
+
+/* ---- BOOKS ---- */
+
+.book-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+}
+.book-container .card {
+    background-color: rgb(231, 186, 62);
+    width: 250px;
+    height: auto;
+    margin: 20px 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.book-cover {
+    width: 100%;
+    height: 410px;
+    border-radius: 20px 20px 0 0;
+}
+.book-info {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.book-info p {
+    padding: 0 10px;
+    text-align: center;
+}
+.buttons {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+.btn-cart {
+    background-color: #37475a;
+    color: #ff9900;
+    flex: 2;
+    text-decoration: none;
+    display: flex;
+    font-size: smaller;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 20px;
+}
+.btn-wish {
+    background-color: #37475a;
+    color: #ff9900;
+    text-decoration: none;
+    flex: 2;
+    display: flex;
+    font-size: smaller;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-buy {
+    background-color: rgb(250, 68, 68);
+    color: white;
+    text-decoration: none;
+    flex: 3;
+    display: flex;
+    font-weight: 700;
+    font-size: medium;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 0;
+}
+
+.buttons i {
+    font-size: large;
+    margin-bottom: 1px;
+    color: #ff9900;
+}
+
+/* --- Checkout page --- */
+.back {
+    background-color: #FF9900;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.back-button a{
+    font-size: large;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+*{
+
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-transform: capitalize;
+    /* transition: all .2s linear; */
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 80vh;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #fab54d 60%, #f7a52a 40.1%);
+  }
+  
+  .container form{
+    padding:20px;
+    width:1000px;
+    background: #fff;
+  }
+  
+  .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .container form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .container form .row .col .inputBox{
+    margin:15px 0;
+  }
+  
+  .container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  .container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .container form .row .col .flex{
+    display: flex;
+    gap:15px;
+  }
+  
+  .container form .row .col .flex .inputBox{
+    margin-top: 5px;
+  }
+  
+  .container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+  }
+  
+  .container form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #27ae60;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container form .submit-btn:hover{
+    background: #2ecc71;
+  }
+
+
+
+/* ---- MEDIA ---- */
+
+@media (max-width: 540px) {
+    .navbar1 {
+        height: 25px;
+    }
+    
+    .navbar1 a {
+        font-size: 8px;
+        margin-right: 10px;
+    }
+    
+    /* - Navigation 2ndbar - */
+    .navbar2 {
+        height: 45px;
+        width: 100%;
+    }
+
+    /* - Navigation 3rd bar - */
+    .navbar3 {
+        height: 50px;
+        display: flex;
+    }
+    
+    .navmenu2 a {
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
+        font-weight: 550;
+        margin-left: 10px;
+    }
+    
+    select {
+        height: 20px;
+        width: 70px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    /* - logo start- */
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hub {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+    
+    .hub span:nth-child(2) {
+        border-radius: 5px;
+        padding: 5px;
+    }
+    /* - logo end - */
+    /* - Search bar/button - */
+    .searchbar {
+        display: flex;
+        justify-content: center;
+        height: 20px;
+    }
+
+    .search-input {
+        height: 15px;
+        width: 85px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .btn-search {
+        height: 20px;
+        width: 45px;
+        font-size: 8px;
+        text-align: center;
+        border-radius: 7px;
+        background-color: #FF9900;
+    }
+
+    
+  ---- Books ----  
+
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+    .book-container .card {
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+    }
+    .book-cover {
+        height: auto;
+        width: 170px;
+        border-radius: 20px 0 0 20px;
+    }
+    .book-info {
+        background-color: rgb(231, 186, 62);
+        border-radius: 0 20px 20px 0;
+        font-size: small;
+    }
+    .buttons span {
+        display: none;
+    }
+    .btn-cart {
+        border-radius: 0;
+    }
+
+    .btn-buy {
+        font-size: smaller;
+    }
+
+}
+
+@media (max-width: 870px) {
+    .navbar1 {
+        height: 30px;
+    }
+    
+    .navbar1 a {
+        font-size: 12px;
+        margin-right: 12px;
+    }
+    
+    /* - Navigation 2ndbar - */
+    .navbar2 {
+        height: 50px;
+    }
+
+    /* - Navigation 3rd bar - */
+    .navbar3 {
+        height: 40px;
+    }
+    .navmenu2 a {
+        font-size: 15px;
+        font-weight: 550;
+        margin-left: 20px;
+    }
+    
+    select {
+        height: 20px;
+        width: 80px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    /* - logo start- */
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hub {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+    
+    .hub span:nth-child(2) {
+        border-radius: 5px;
+        padding: 5px;
+    }
+    /* - logo end - */
+    /* - Search bar/button - */
+    .searchbar {
+        display: flex;
+        justify-content: center;
+        height: 20px;
+    }
+
+    .search-input {
+        height: 15px;
+        width: 85px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .btn-search {
+        height: 20px;
+        width: 45px;
+        font-size: 8px;
+        text-align: center;
+        border-radius: 7px;
+        background-color: #FF9900;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar1 {
+        height: 18px;
+    }
+    
+    .navbar1 a {
+        font-size: 5px;
+        margin-right: 10px;
+    }
+    
+    /* - Navigation 2ndbar - */
+    .navbar2 {
+        height: 35px;
+        width: 100%;
+    }
+
+    /* - Navigation 3rd bar - */
+    .navbar3 {
+        height: 30px;
+        display: flex;
+    }
+    
+    .navmenu2 a {
+        text-decoration: none;
+        font-size: 7px;
+        color: black;
+        font-weight: 550;
+        margin-left: 10px;
+    }
+    
+    select {
+        height: 10px;
+        width: 40px;
+        font-size: 5px;
+        border-radius: 8px;
+    }
+
+    /* - logo start- */
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hub {
+        color: white;
+        font-size: 13px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+    
+    .hub span:nth-child(2) {
+        border-radius: 5px;
+        padding: 5px;
+    }
+    /* - logo end - */
+    /* - Search bar/button - */
+    .searchbar {
+        display: flex;
+        justify-content: center;
+        height: 5px;
+    }
+
+    .search-input {
+        height: 10px;
+        width: 60px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .btn-search {
+        height: 15px;
+        width: 40px;
+        font-size: 5px;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
